@@ -1,0 +1,42 @@
+
+body{
+  background: gray;
+  text-align: center;
+  }
+
+ 
+  
+  .aboutSection{
+    text-align: center;
+    border: 1px solid black;
+  }
+  iframe{
+  margin: auto;  
+  display: block;
+  height: 400px;
+    width: 85%;
+  }
+  h4{
+    margin: 0;
+  }
+  
+  .portfolioSection{
+    background: lightgray;
+    text-align: center;
+    border: 1px solid black;
+  }
+  .bioDiv{
+    background: darkgray;
+    text-align: left;
+  }
+  .bioPicture{
+    margin: 5px;
+    float: left;
+      width: 40%;
+
+  }
+
+  header{
+
+    font-size: 25px;
+  }
