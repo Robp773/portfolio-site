@@ -1,6 +1,5 @@
 body{
   font-family: 'Archivo Narrow', sans-serif;
-  margin: 15px;
   text-align: center;
   }
   .fa{
@@ -13,7 +12,7 @@ body{
   }
   .descDiv{
     font-size: 25px;
-    margin: 15px;
+    margin-top: 10px;
     background: #F2F4F3;
   }
 
@@ -21,14 +20,15 @@ body{
   margin: auto;  
   display: block;
   height: 400px;
-  width: 85%;
+  width: 100%;
   }
   h4{
     margin: 0;
-    font-size: 30px;
+    font-size: 25px;
   }
   h2{
-    color: white;
+    font-size: 35px;
+
   }
 
   .portfolioSection{
@@ -50,9 +50,8 @@ body{
   }
   .bioDiv{
     vertical-align: top;
-    width: 70%;
     display: inline-block;
-    padding: 10px;
+    padding: 5px;
     display: inline-block;
     text-align: left;
     font-size: 25px;
@@ -63,16 +62,13 @@ body{
   }
   
   .bioParent{
-    margin: 15px;
         box-shadow: 0 10px 5px;
 
     background: #F2F4F3;
   }
   .contactInfo{
-    margin-top: 15px;
     padding-top: 10px;
     text-align: center;
-    width: 25%;
     display: inline-block;
   }
   img{
@@ -81,3 +77,7 @@ body{
     width: 150px;
     height: 150px;
   }
+p{
+  
+  margin: 0;
+}
