@@ -1,42 +1,111 @@
-
+/* #292F36 - black */
+/* #16BAC5 teal */
+/* #4ECDC4-green */
 body{
-  background: gray;
+  background: #314755;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #26a0da, #314755);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #26a0da, #314755); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  font-family: 'Archivo Narrow', sans-serif;
   text-align: center;
   }
-
- 
-  
-  .aboutSection{
-    text-align: center;
-    border: 1px solid black;
+  .fa{
+    display: inline-block;
+    color: #336699;
+    font-size: 50px;
   }
+  .fa:hover{
+    color: #666666;
+  }
+  .descDiv{
+    margin-top: 10px;
+    font-size: 25px;
+    background: #F2F4F3;
+  }
+.fa-usd{
+  margin: 0;
+  font-size: 25px;
+  color: black;
+}
   iframe{
   margin: auto;  
   display: block;
-  height: 400px;
-    width: 85%;
+  height: 500px;
+  width: 100%;
   }
   h4{
     margin: 0;
+ font-size: 30px;
   }
-  
+  h2{
+    font-size: 35px;
+    color: white;
+  }
+
   .portfolioSection{
-    background: lightgray;
+    box-shadow: 0 10px 5px;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 20px;
     text-align: center;
-    border: 1px solid black;
+  }
+  .got{
+    background: #336699;
+  }
+  .timeSpent{
+    background: #666666;
+  }
+  .packLight{
+    background: #336699;
   }
   .bioDiv{
-    background: darkgray;
+    vertical-align: top;
+    display: inline-block;
     text-align: left;
-  }
-  .bioPicture{
-    margin: 5px;
-    float: left;
-      width: 40%;
-
-  }
+    font-size: 25px;
+}
 
   header{
-
-    font-size: 25px;
+    color: white;
+    font-size: 45px;
+    margin: 5px;
   }
+  
+  .bioParent{
+    margin-bottom: 15px;
+    box-shadow: 0 10px 5px;
+
+    background: #F2F4F3;
+  }
+  .contactInfo{
+    text-align: center;
+  }
+
+  img{
+    margin: auto;
+    display: block;
+    width: 150px;
+    height: 150px;
+  }
+  @media only screen and (min-width: 600px){
+    body{
+      margin: 20px;
+    }
+    .portfolioSection{
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+iframe{
+  width: 80%;
+}
+
+.bioParent{
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+}
+  }
+
+  
