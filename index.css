@@ -7,26 +7,23 @@ body{
     margin: 3px;
     font-size: 50px;
   }
+
   .fa:hover{
     color: #666666;
   }
   .descDiv{
-    font-size: 25px;
+    padding: 5px;
+    font-size: 20px;
     margin-top: 10px;
     background: #F2F4F3;
   }
 
-  iframe{
-  margin: auto;  
-  display: block;
-  height: 400px;
-  width: 100%;
-  }
   h4{
     margin: 0;
     font-size: 25px;
   }
   h2{
+    margin: 20px;
     font-size: 35px;
 
   }
@@ -37,7 +34,6 @@ body{
     margin-top: 20px;
     padding: 10px;
     font-size: 20px;
-    text-align: center;
   }
   .got{
     background: #336699;
@@ -51,10 +47,7 @@ body{
   .bioDiv{
     vertical-align: top;
     display: inline-block;
-    padding: 5px;
-    display: inline-block;
-    text-align: left;
-    font-size: 25px;
+    font-size: 20px;
 }
 
   header{
@@ -78,6 +71,27 @@ body{
     height: 150px;
   }
 p{
-  
   margin: 0;
+}
+h3{
+  text-align: center;
+margin: auto;
+}
+.whatIDoDiv{
+  text-align: center;
+}
+.descSpan{
+  margin: 5px;
+  text-align: left;
+}
+.screenshot{
+  height: 300px;
+  width: 100%;
+  border: 2px solid black;
+}
+  
+@media screen and(min-width: 600px){
+body{
+  background: red;
+}
 }
