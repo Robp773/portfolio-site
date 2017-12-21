@@ -2,6 +2,18 @@ body{
   font-family: 'Archivo Narrow', sans-serif;
   text-align: center;
   }
+  a{
+    text-decoration: none;
+  }
+
+  a:hover{
+    color: #ffc04c;
+  }
+
+  .topContainer{
+    padding-top: 5px;
+ 
+  }
   .fa{
     color: #336699;
     margin: 3px;
@@ -9,58 +21,112 @@ body{
   }
 
   .fa:hover{
-    color: #666666;
+    color:  #ffc04c;
   }
   .descDiv{
+    background: #F2F4F3;
     padding: 5px;
     font-size: 20px;
     margin-top: 10px;
-    background: #F2F4F3;
   }
+
 
   h4{
     margin: 0;
     font-size: 25px;
   }
   h2{
-    margin: 20px;
+    margin-top: 0;
+    margin-bottom: 10px;
     font-size: 35px;
+
+  }
+  @keyframes highlightOnLoad {
+    0% {
+        border-top: 1px solid #ffc04c;
+        width: 0%;
+    }
+    50%{
+      width: 100%;
+    }
+    100% {
+        border-top: 5px solid #336699;
+    }
+}
+
+
+.bioDiv{
+  width: fit-content;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
+  .border{
+    border-top: 5px solid #336699;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;    
+    animation: 1s ease-out 0s 1 highlightOnLoad;
 
   }
 
   .portfolioSection{
-    box-shadow: 0 10px 5px;
-    background: #F2F4F3;
-    margin-top: 20px;
-    padding: 10px;
+    border: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-size: 20px;
+    background: #F2F4F3;   
   }
-  .got{
-    background: #336699;
+
+  .portfolioSection > h3{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
-  .timeSpent{
-    background: #666666;
+
+ 
+  .underliner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 0%;
+    border-bottom: 0;
+    border-bottom: 3px solid #ffc04c;
+    -webkit-transition: all .5s;
+
+      
+    }
+  .portfolioSection:hover .underliner{
+    width: 100%;
+    border-bottom: 3px solid #ffc04c;
+    -webkit-transition: all .5s;
+    
   }
-  .packLight{
-    background: #336699;
-  }
-  .bioDiv{
-    vertical-align: top;
-    display: inline-block;
-    font-size: 20px;
-}
+
+
+
+
 
   header{
+    width: fit-content;
     font-size: 35px;
+    padding-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   .bioParent{
-        box-shadow: 0 10px 5px;
+      box-shadow: 0 10px 5px;
 
     background: #F2F4F3;
   }
   .contactInfo{
-    padding-top: 10px;
     text-align: center;
     display: inline-block;
   }
@@ -74,24 +140,80 @@ p{
   margin: 0;
 }
 h3{
-  text-align: center;
-margin: auto;
-}
-.whatIDoDiv{
+  font-size: 30px;
   text-align: center;
 }
+.whatIDo{
+  text-align: center;
+}
+
 .descSpan{
   margin: 5px;
   text-align: left;
 }
 .screenshot{
   height: 300px;
-  width: 100%;
+  width: 95%;
   border: 2px solid black;
+  margin: auto;
 }
-  
-@media screen and(min-width: 600px){
-body{
-  background: red;
+.timeSpent, .packLight{
+  margin-top: 12px;
+}
+  /* non-mobile */
+@media screen and (min-width: 750px){
+  header{
+    font-size: 55px;
+  }
+  .contactIcons{
+    font-size: 40px;
+    display: block;
+  }
+
+.contactInfo{
+  display: block;
+ 
+}
+
+
+.screenshot{
+  height: 500px;
+  border: 2px solid black;
+  width: 75%;
+}
+h2{
+  font-size: 55px;
+}
+h3{
+  font-size: 50px;
+}
+h4{
+  font-size: 40px;
+}
+
+
+
+.bioDiv{
+  font-size: 35px;
+}
+.desktopAboutMeSpan{
+  display: block;
+}
+.descDiv{
+  font-size: 35px;
+}
+.portfolioSection{
+  width: 70%;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
 }
 }
+/* ipads */
+@media screen and (min-height: 1000px){
+.portfolioSection{
+  width: 100%;
+}
+
+}  
