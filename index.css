@@ -2,8 +2,12 @@ body {
 	font-family: 'Archivo Narrow', sans-serif;
 	text-align: center;
 }
-a {
+a {	font-weight: bold;
+	color: #336699;
 	text-decoration: none;
+}
+.techDiv{
+	margin-bottom: 10px;
 }
 a:hover {
 	color: #ffc04c;
@@ -26,7 +30,7 @@ a:hover {
 	margin-top: 10px;
 }
 h4 {
-	margin: 0;
+	margin: 9px;
 	font-size: 25px;
 }
 h2 {
@@ -169,7 +173,7 @@ h3 {
 		font-size: 50px;
 	}
 	h4 {
-		font-size: 40px;
+		font-size: 30px;
 	}
 	.bioDiv {
 		font-size: 35px;
@@ -178,7 +182,7 @@ h3 {
 		display: block;
 	}
 	.descDiv {
-		font-size: 35px;
+		font-size: 25px;
 	}
 	.portfolioSection {
 		width: 70%;
