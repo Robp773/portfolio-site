@@ -192,6 +192,9 @@ h3 {
 		margin-bottom: 10px;
 	}
 }
+.newsViewsDiv{
+	margin-bottom: 10px;
+}
 /* ipads */
 
 @media screen and (min-height: 1000px) {
