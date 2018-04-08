@@ -40,7 +40,7 @@ h2 {
 }
 @keyframes highlightOnLoad {
 	0% {
-		border-top: 1px solid #ffc04c;
+		border-top: 5px solid #ffc04c;
 		width: 0%;
 	}
 	50% {
