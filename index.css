@@ -371,12 +371,13 @@ h3 {
   .newsViewsDiv {
     margin-bottom: 10px; }
   #headerDownBtn {
-    top: 75%; }
+    top: 75%;
+    right: 45%; }
   .topContainer {
     top: 5%; }
   .portfolioContent {
     position: relative;
-    width: 95%; }
+    width: 65%; }
   .descDiv,
   .screenshot {
     display: inline-block;
