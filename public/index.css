@@ -1,0 +1,445 @@
+#parentContainer {
+  background: url("./images/mountain6.jpg");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 150vh;
+  width: 100%;
+  color: white; }
+
+.topContainer {
+  position: relative;
+  top: 5%;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.65); }
+
+body {
+  font-family: "Archivo Narrow", sans-serif;
+  text-align: center; }
+
+a {
+  font-weight: bold;
+  text-decoration: none; }
+
+a,
+.devicon-github-plain.colored {
+  color: #ffc04c; }
+
+.techDiv {
+  margin-bottom: 10px; }
+
+.techContainer {
+  display: inline-block; }
+
+.contact,
+.fa {
+  font-size: 50px; }
+
+.downBtn,
+#headerDownBtn {
+  color: white;
+  -webkit-animation: arrowPulse 0.75s alternate infinite;
+  animation: arrowPulse 0.75s alternate infinite; }
+
+#headerDownBtn {
+  position: absolute;
+  top: 75%;
+  left: 45%;
+  padding: 0;
+  font-size: 100px; }
+
+.downBtn {
+  font-size: 70px; }
+
+a:hover,
+.devicon-github-plain.colored:hover {
+  color: #ffc04c; }
+
+.fa {
+  color: #336699;
+  margin: 3px;
+  font-size: 50px; }
+
+.fa:hover {
+  color: #ffc04c; }
+
+.descDiv {
+  width: 100%;
+  margin: auto;
+  color: black;
+  font-size: 23px;
+  margin-top: 5px; }
+
+h4 {
+  margin: 9px;
+  font-size: 25px; }
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 35px; }
+
+@-webkit-keyframes highlightOnLoad {
+  0% {
+    border-top: 5px solid #336699;
+    width: 0%; }
+  50% {
+    width: 100%; }
+  100% {
+    border-top: 5px solid #ffc04c; } }
+
+@-webkit-keyframes arrowPulse {
+  0% {
+    color: white; }
+  100% {
+    color: #ffc04c; } }
+
+@keyframes arrowPulse {
+  0% {
+    color: white; }
+  100% {
+    color: #ffc04c; } }
+
+@keyframes highlightOnLoad {
+  0% {
+    border-top: 5px solid #336699;
+    width: 0%; }
+  50% {
+    width: 100%; }
+  100% {
+    border-top: 5px solid #ffc04c; } }
+
+.projectLinks {
+  display: inline-block;
+  width: 20%;
+  float: right; }
+
+.bioDiv {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 24px; }
+
+.border {
+  border-top: 5px solid #ffc04c;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-animation: 4s 0s 1 highlightOnLoad;
+  animation: 4s 0s 1 highlightOnLoad; }
+
+.portfolioContent {
+  background: rgba(255, 255, 255, 0.85);
+  margin: auto;
+  -webkit-box-shadow: 0 0 13px black;
+  box-shadow: 0 0 13px black; }
+
+.devicon-javascript-plain.colored {
+  color: darkorange; }
+
+.portfolioSection {
+  position: relative;
+  border: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 20px;
+  color: white;
+  background-attachment: fixed;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#newsViews,
+#timeSpent,
+#packLight,
+#got {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: 125% 100%;
+  height: 150vh; }
+
+#newsViews {
+  background-image: url("./images/mountain2.jpg"); }
+
+#timeSpent {
+  background-image: url("./images/mountain3.jpg"); }
+
+#packLight {
+  background-image: url("./images/mountain4.jpg"); }
+
+#got {
+  background-image: url("./images/mountain1.jpg"); }
+
+.portfolioHeader {
+  position: relative;
+  text-align: center;
+  color: black;
+  margin: 5px auto; }
+
+.rightLink {
+  position: absolute;
+  right: 0;
+  top: 15%;
+  margin: 0 20px; }
+
+.doubleLink {
+  position: absolute;
+  right: 0;
+  top: 15%;
+  margin: 0 10px; }
+
+.leftLink {
+  position: absolute;
+  left: 0;
+  top: 15%;
+  margin: 0 20px; }
+
+.leftLink:hover,
+.rightLink:hover {
+  -webkit-animation: linkSpinner 0.65s linear infinite;
+  animation: linkSpinner 0.65s linear infinite; }
+
+@-webkit-keyframes linkSpinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes linkSpinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.portfolioHeader > h3 {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px auto; }
+
+.underliner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 0%;
+  border-bottom: 0;
+  border-bottom: 3px solid #ffc04c;
+  -webkit-transition: all 0.5s; }
+
+.portfolioSection:hover .underliner {
+  width: 100%;
+  border-bottom: 3px solid #ffc04c;
+  -webkit-transition: all 0.5s; }
+
+.icon {
+  font-size: 40px; }
+
+.zoom,
+.devicon-express-original-wordmark.colored {
+  color: white; }
+
+.zoom {
+  background: #ffc04c; }
+
+.devicon-express-original-wordmark.colored {
+  background: #336699; }
+
+header {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 35px;
+  padding-top: 5px;
+  margin-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px; }
+
+.bioParent {
+  -webkit-box-shadow: 0 10px 5px;
+  box-shadow: 0 10px 5px;
+  background: #f2f4f3; }
+
+.returnBtnIcon {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+  font-size: 70px;
+  -webkit-animation: 1s arrowPulse alternate infinite;
+  animation: 1s arrowPulse alternate infinite;
+  margin: 0 20px; }
+
+.contactInfo {
+  text-align: center;
+  display: inline-block; }
+
+img {
+  margin: auto;
+  display: block;
+  width: 150px;
+  height: 150px; }
+
+p {
+  margin: 0; }
+
+h3 {
+  font-size: 40px;
+  text-align: center; }
+
+.whatIDo {
+  text-align: center; }
+
+.descSpan {
+  margin: 5px;
+  text-align: left; }
+
+@-webkit-keyframes traceScreenshot {
+  0% { }
+  50% {
+    width: 100%; }
+  100% {
+    border-top: 5px solid #336699; } }
+
+.screenshot {
+  -webkit-box-shadow: 0 0 5px black;
+  box-shadow: 0 0 5px black;
+  width: 98%;
+  height: 250px;
+  margin: auto; }
+
+.clientApiParent {
+  text-align: left;
+  display: inline-block; }
+
+.clientApi {
+  display: block; }
+
+.raisedLink {
+  position: relative;
+  bottom: 10px; }
+
+.iconSmall {
+  font-size: 20px; }
+
+@media screen and (min-height: 750px) {
+  .screenshot {
+    height: 300px; }
+  .icon {
+    font-size: 55px; } }
+
+/* start of non-mobile */
+@media screen and (min-width: 750px) {
+  header {
+    font-size: 55px; }
+  .topContainer {
+    top: 5%; }
+  .projectLinks {
+    padding: 10px; }
+  .portfolioContent {
+    width: 85%; }
+  .iconSmall {
+    font-size: 30px; }
+  .icon {
+    font-size: 50px; }
+  .contactIcons {
+    font-size: 40px;
+    display: block; }
+  .contactInfo {
+    display: block; }
+  .screenshot {
+    height: 400px;
+    width: 98%; }
+  h2 {
+    font-size: 55px; }
+  h3 {
+    font-size: 50px; }
+  h4 {
+    font-size: 30px; }
+  .bioDiv {
+    font-size: 30px; }
+  .desktopAboutMeSpan {
+    display: block; }
+  .descDiv {
+    font-size: 25px; } }
+
+.newsViewsDiv {
+  margin-bottom: 10px; }
+
+@media screen and (min-width: 750px) {
+  #headerDownBtn {
+    top: 75%; }
+  .topContainer {
+    top: 5%; }
+  .portfolioContent {
+    position: relative;
+    width: 95%; }
+  .descDiv,
+  .screenshot {
+    display: inline-block;
+    position: relative;
+    width: 49%;
+    margin: auto; }
+  .descDiv {
+    margin: auto;
+    top: -25vh; } }
+
+@media screen and (min-width: 1550px) {
+  .topContainer {
+    top: 10%; }
+  .screenshot {
+    width: 60%;
+    height: 300px;
+    display: block; }
+  .downBtn {
+    position: absolute;
+    top: 58%;
+    right: 48%; }
+  #headerDownBtn {
+    right: 44%; }
+  .descDiv {
+    width: 65%;
+    display: block;
+    position: static; }
+  .portfolioContent {
+    width: 65%; }
+  .icon {
+    font-size: 55px; }
+  .portfolioHeader,
+  h4 {
+    margin: 1px; }
+  #headerDownBtn {
+    top: 70%; } }
+
+@media screen and (min-height: 850px) {
+  .descDiv {
+    font-size: 30px; }
+  .portfolioContent {
+    width: 65%; }
+  .downBtn {
+    top: 58%;
+    font-size: 85px; }
+  #headerDownBtn {
+    top: 77%; }
+  .bioDiv {
+    font-size: 35px; }
+  h3 {
+    font-size: 50px; }
+  h4 {
+    font-size: 40px; }
+  .screenshot {
+    height: 400px;
+    width: 65%; }
+  .icon {
+    font-size: 55px; } }
