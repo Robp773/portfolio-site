@@ -1,7 +1,9 @@
 $blueish: #336699;
 $oranegish: #ffc04c;
 $standardShadow: 0 0 13px black;
-
+body{
+  overflow-y: hidden;
+}
 #parentContainer {
   background: url("./images/mountain6.jpg");
   background-attachment: fixed;
@@ -10,6 +12,7 @@ $standardShadow: 0 0 13px black;
   height: 150vh;
   width: 100%;
   color: white;
+  overflow-y: hidden;
 }
 
 .topContainer {
