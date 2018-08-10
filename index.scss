@@ -1,7 +1,7 @@
 $blueish: #336699;
 $oranegish: #ffc04c;
 $standardShadow: 0 0 13px black;
-body{
+body {
   overflow-y: hidden;
 }
 #parentContainer {
@@ -395,16 +395,10 @@ h3 {
     font-size: 55px;
   }
 
-  .topContainer {
-    top: 5%;
-  }
   .projectLinks {
     padding: 10px;
   }
 
-  .portfolioContent {
-    width: 85%;
-  }
   .iconSmall {
     font-size: 30px;
   }
@@ -418,10 +412,7 @@ h3 {
   .contactInfo {
     display: block;
   }
-  .screenshot {
-    height: 400px;
-    width: 98%;
-  }
+
   h2 {
     font-size: 55px;
   }
@@ -437,16 +428,11 @@ h3 {
   .desktopAboutMeSpan {
     display: block;
   }
-  .descDiv {
-    font-size: 25px;
+
+  .newsViewsDiv {
+    margin-bottom: 10px;
   }
-}
 
-.newsViewsDiv {
-  margin-bottom: 10px;
-}
-
-@media screen and (min-width: 750px) {
   #headerDownBtn {
     top: 75%;
   }
@@ -467,9 +453,13 @@ h3 {
     margin: auto;
   }
 
+  .screenshot {
+    height: 400px;
+  }
+
   .descDiv {
-    margin: auto;
-    top: -25vh;
+    font-size: 25px;
+    top: -15vh;
   }
 }
 

@@ -347,12 +347,8 @@ h3 {
 @media screen and (min-width: 750px) {
   header {
     font-size: 55px; }
-  .topContainer {
-    top: 5%; }
   .projectLinks {
     padding: 10px; }
-  .portfolioContent {
-    width: 85%; }
   .iconSmall {
     font-size: 30px; }
   .icon {
@@ -362,9 +358,6 @@ h3 {
     display: block; }
   .contactInfo {
     display: block; }
-  .screenshot {
-    height: 400px;
-    width: 98%; }
   h2 {
     font-size: 55px; }
   h3 {
@@ -375,13 +368,8 @@ h3 {
     font-size: 30px; }
   .desktopAboutMeSpan {
     display: block; }
-  .descDiv {
-    font-size: 25px; } }
-
-.newsViewsDiv {
-  margin-bottom: 10px; }
-
-@media screen and (min-width: 750px) {
+  .newsViewsDiv {
+    margin-bottom: 10px; }
   #headerDownBtn {
     top: 75%; }
   .topContainer {
@@ -395,9 +383,11 @@ h3 {
     position: relative;
     width: 49%;
     margin: auto; }
+  .screenshot {
+    height: 400px; }
   .descDiv {
-    margin: auto;
-    top: -25vh; } }
+    font-size: 25px;
+    top: -15vh; } }
 
 @media screen and (min-width: 1550px) {
   .topContainer {
