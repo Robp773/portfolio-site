@@ -316,13 +316,6 @@ h3 {
   100% {
     border-top: 5px solid #336699; } }
 
-.screenshot {
-  -webkit-box-shadow: 0 0 5px black;
-  box-shadow: 0 0 5px black;
-  width: 98%;
-  height: 250px;
-  margin: auto; }
-
 .clientApiParent {
   text-align: left;
   display: inline-block; }
@@ -337,14 +330,29 @@ h3 {
 .iconSmall {
   font-size: 20px; }
 
+.screenshot {
+  width: 100%;
+  height: 45vh; }
+
+.screenshot2 {
+  display: none; }
+
 @media screen and (min-height: 750px) {
-  .screenshot {
-    height: 300px; }
   .icon {
     font-size: 55px; } }
 
 /* start of non-mobile */
 @media screen and (min-width: 750px) {
+  .screenshot {
+    display: inline-block;
+    height: 50vh;
+    -webkit-box-shadow: 0 0 5px black;
+    box-shadow: 0 0 5px black;
+    width: 75%; }
+  .screenshot2 {
+    height: 50vh;
+    width: 20%;
+    display: inline-block; }
   header {
     font-size: 55px; }
   .projectLinks {
@@ -375,17 +383,13 @@ h3 {
     right: 45%; }
   .topContainer {
     top: 5%; }
+  .downBtn {
+    position: relative;
+    bottom: 25px; }
   .portfolioContent {
     position: relative;
     width: 65%; }
   .descDiv,
-  .screenshot {
-    display: inline-block;
-    position: relative;
-    width: 49%;
-    margin: auto; }
-  .screenshot {
-    height: 400px; }
   .descDiv {
     font-size: 25px;
     top: -15vh; } }
@@ -393,14 +397,6 @@ h3 {
 @media screen and (min-width: 1550px) {
   .topContainer {
     top: 10%; }
-  .screenshot {
-    width: 60%;
-    height: 300px;
-    display: block; }
-  .downBtn {
-    position: absolute;
-    top: 58%;
-    right: 48%; }
   #headerDownBtn {
     right: 44%; }
   .descDiv {
@@ -422,9 +418,6 @@ h3 {
     font-size: 30px; }
   .portfolioContent {
     width: 65%; }
-  .downBtn {
-    top: 58%;
-    font-size: 85px; }
   #headerDownBtn {
     top: 77%; }
   .bioDiv {
@@ -433,8 +426,5 @@ h3 {
     font-size: 50px; }
   h4 {
     font-size: 40px; }
-  .screenshot {
-    height: 400px;
-    width: 65%; }
   .icon {
     font-size: 55px; } }
