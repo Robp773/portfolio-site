@@ -1,6 +1,13 @@
 body {
   overflow-y: hidden; }
 
+#mobileUpBtns {
+  position: relative;
+  top: 10px; }
+
+.upBtn {
+  position: relative; }
+
 #parentContainer {
   background: url("./images/mountain6.jpg");
   background-attachment: fixed;
@@ -10,6 +17,9 @@ body {
   width: 100%;
   color: white;
   overflow-y: hidden; }
+
+.desktopDownBtn {
+  display: none; }
 
 .topContainer {
   position: relative;
@@ -50,13 +60,15 @@ a,
 
 #headerDownBtn {
   position: absolute;
-  top: 75%;
+  top: 60%;
   left: 45%;
   padding: 0;
   font-size: 100px; }
 
 .downBtn {
-  font-size: 70px; }
+  position: relative;
+  font-size: 70px;
+  bottom: 20px; }
 
 a:hover,
 .devicon-github-plain.colored:hover {
@@ -332,17 +344,38 @@ h3 {
 
 .screenshot {
   width: 100%;
-  height: 45vh; }
+  height: 35vh; }
 
 .screenshot2 {
   display: none; }
 
 @media screen and (min-height: 750px) {
+  .downBtn {
+    display: none; }
   .icon {
     font-size: 55px; } }
 
+@media screen and (width: 320px) and (height: 568px) {
+  #headerDownBtn {
+    top: 80%;
+    left: 42%; } }
+
 /* start of non-mobile */
 @media screen and (min-width: 750px) {
+  .downBtn {
+    display: none; }
+  .desktopDownBtn {
+    -webkit-animation: 0.75s arrowPulse alternate infinite;
+    animation: 0.75s arrowPulse alternate infinite;
+    position: absolute;
+    font-size: 70px;
+    display: inline-block; }
+  .right {
+    right: 10%;
+    bottom: 0; }
+  .left {
+    left: 10%;
+    bottom: 0; }
   .screenshot {
     display: inline-block;
     height: 50vh;

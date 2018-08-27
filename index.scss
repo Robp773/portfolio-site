@@ -4,6 +4,15 @@ $standardShadow: 0 0 13px black;
 body {
   overflow-y: hidden;
 }
+
+#mobileUpBtns {
+  position: relative;
+  top: 10px;
+}
+
+.upBtn {
+  position: relative;
+}
 #parentContainer {
   background: url("./images/mountain6.jpg");
   background-attachment: fixed;
@@ -13,6 +22,10 @@ body {
   width: 100%;
   color: white;
   overflow-y: hidden;
+}
+
+.desktopDownBtn {
+  display: none;
 }
 
 .topContainer {
@@ -57,14 +70,16 @@ a,
 
 #headerDownBtn {
   position: absolute;
-  top: 75%;
+  top: 60%;
   left: 45%;
   padding: 0;
   font-size: 100px;
 }
 
 .downBtn {
+  position: relative;
   font-size: 70px;
+  bottom: 20px;
 }
 
 a:hover,
@@ -354,13 +369,6 @@ h3 {
   }
 }
 
-.screenshot {
-  box-shadow: 0 0 5px black;
-  width: 98%;
-  height: 250px;
-  margin: auto;
-}
-
 .clientApiParent {
   text-align: left;
   display: inline-block;
@@ -378,19 +386,64 @@ h3 {
 .iconSmall {
   font-size: 20px;
 }
+.screenshot {
+  width: 100%;
+  height: 35vh;
+}
+.screenshot2 {
+  display: none;
+}
 
 // iphone x
 @media screen and (min-height: 750px) {
-  .screenshot {
-    height: 300px;
+  .downBtn {
+    display: none;
   }
   .icon {
     font-size: 55px;
   }
 }
+@media screen and (width: 320px) and (height: 568px) {
+  #headerDownBtn {
+    top: 80%;
+    left: 42%;
+  }
+}
 
 /* start of non-mobile */
 @media screen and (min-width: 750px) {
+  .downBtn {
+    display: none;
+  }
+  .techContainer{
+    // background: red;
+  }
+  .desktopDownBtn {
+    animation: 0.75s arrowPulse alternate infinite;
+    position: absolute;
+    font-size: 70px;
+    display: inline-block;
+  }
+  .right {
+    right: 10%;
+    bottom: 0;
+  }
+  .left {
+    // left: 60%;
+    left: 10%;
+    bottom:0;
+  }
+  .screenshot {
+    display: inline-block;
+    height: 50vh;
+    box-shadow: 0 0 5px black;
+    width: 75%;
+  }
+  .screenshot2 {
+    height: 50vh;
+    width: 20%;
+    display: inline-block;
+  }
   header {
     font-size: 55px;
   }
@@ -434,7 +487,6 @@ h3 {
   }
 
   #headerDownBtn {
-    // background: red;
     top: 75%;
     right: 45%;
   }
@@ -442,23 +494,16 @@ h3 {
   .topContainer {
     top: 5%;
   }
+  .downBtn {
+    position: relative;
+    bottom: 25px;
+  }
 
   .portfolioContent {
     position: relative;
     width: 65%;
   }
   .descDiv,
-  .screenshot {
-    display: inline-block;
-    position: relative;
-    width: 49%;
-    margin: auto;
-  }
-
-  .screenshot {
-    height: 400px;
-  }
-
   .descDiv {
     font-size: 25px;
     top: -15vh;
@@ -469,17 +514,6 @@ h3 {
 @media screen and (min-width: 1550px) {
   .topContainer {
     top: 10%;
-  }
-  .screenshot {
-    width: 60%;
-    height: 300px;
-    display: block;
-  }
-
-  .downBtn {
-    position: absolute;
-    top: 58%;
-    right: 48%;
   }
 
   #headerDownBtn {
@@ -517,10 +551,6 @@ h3 {
   .portfolioContent {
     width: 65%;
   }
-  .downBtn {
-    top: 58%;
-    font-size: 85px;
-  }
 
   #headerDownBtn {
     top: 77%;
@@ -538,10 +568,6 @@ h3 {
     font-size: 40px;
   }
 
-  .screenshot {
-    height: 400px;
-    width: 65%;
-  }
   .icon {
     font-size: 55px;
   }
