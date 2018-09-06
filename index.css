@@ -1,34 +1,29 @@
 body {
   overflow-y: hidden; }
 
-#mobileUpBtns {
-  position: relative;
-  top: 10px; }
-
 .upBtn {
   position: relative; }
 
-#parentContainer {
-  background: url("./images/mountain6.jpg");
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  height: 150vh;
-  width: 100%;
+.video-container {
+  display: none; }
+
+.header-bio {
+  width: fit-content;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
-  overflow-y: hidden; }
+  background: rgba(0, 0, 0, 0.65);
+  padding: 10px; }
 
 .desktopDownBtn {
   display: none; }
 
 .topContainer {
-  position: relative;
-  top: 5%;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin: auto;
-  background: rgba(0, 0, 0, 0.65); }
+  color: white;
+  height: 100vh;
+  position: relative; }
 
 body {
   font-family: "Archivo Narrow", sans-serif;
@@ -55,20 +50,21 @@ a,
 .downBtn,
 #headerDownBtn {
   color: white;
-  -webkit-animation: arrowPulse 0.75s alternate infinite;
   animation: arrowPulse 0.75s alternate infinite; }
 
 #headerDownBtn {
   position: absolute;
-  top: 60%;
-  left: 45%;
-  padding: 0;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   font-size: 100px; }
 
 .downBtn {
-  position: relative;
+  position: absolute;
   font-size: 70px;
-  bottom: 20px; }
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
 
 a:hover,
 .devicon-github-plain.colored:hover {
@@ -100,33 +96,18 @@ h2 {
 
 @-webkit-keyframes highlightOnLoad {
   0% {
-    border-top: 5px solid #336699;
+    border-top: 5px solid white;
     width: 0%; }
   50% {
     width: 100%; }
   100% {
     border-top: 5px solid #ffc04c; } }
-
-@-webkit-keyframes arrowPulse {
-  0% {
-    color: white; }
-  100% {
-    color: #ffc04c; } }
 
 @keyframes arrowPulse {
   0% {
     color: white; }
   100% {
     color: #ffc04c; } }
-
-@keyframes highlightOnLoad {
-  0% {
-    border-top: 5px solid #336699;
-    width: 0%; }
-  50% {
-    width: 100%; }
-  100% {
-    border-top: 5px solid #ffc04c; } }
 
 .projectLinks {
   display: inline-block;
@@ -154,7 +135,6 @@ h2 {
 .portfolioContent {
   background: rgba(255, 255, 255, 0.85);
   margin: auto;
-  -webkit-box-shadow: 0 0 13px black;
   box-shadow: 0 0 13px black; }
 
 .devicon-javascript-plain.colored {
@@ -178,8 +158,10 @@ h2 {
 #got {
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: 125% 100%;
-  height: 150vh; }
+  background-size: 100% 100%;
+  height: 100vh;
+  position: relative;
+  top: 25%; }
 
 #newsViews {
   background-image: url("./images/mountain2.jpg"); }
@@ -219,29 +201,16 @@ h2 {
 
 .leftLink:hover,
 .rightLink:hover {
-  -webkit-animation: linkSpinner 0.65s linear infinite;
   animation: linkSpinner 0.65s linear infinite; }
-
-@-webkit-keyframes linkSpinner {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg); }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg); } }
 
 @keyframes linkSpinner {
   0% {
-    -webkit-transform: rotate(0deg);
     transform: rotate(0deg); }
   100% {
-    -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
 
 .portfolioHeader > h3 {
   display: inline-block;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
   width: fit-content;
   margin: 10px auto; }
 
@@ -289,11 +258,8 @@ header {
   background: #f2f4f3; }
 
 .returnBtnIcon {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
   transform: rotate(180deg);
   font-size: 70px;
-  -webkit-animation: 1s arrowPulse alternate infinite;
   animation: 1s arrowPulse alternate infinite;
   margin: 0 20px; }
 
@@ -349,6 +315,14 @@ h3 {
 .screenshot2 {
   display: none; }
 
+.topContainer {
+  background: url("./images/mountain6.jpg");
+  background-size: cover;
+  background-position: center; }
+
+.video-container {
+  display: none; }
+
 @media screen and (min-height: 750px) {
   .downBtn {
     display: none; }
@@ -364,8 +338,20 @@ h3 {
 @media screen and (min-width: 750px) {
   .downBtn {
     display: none; }
+  .topContainer {
+    background: url(""); }
+  .video-container {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    width: 100vw;
+    top: 50%;
+    filter: blur(4px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; }
   .desktopDownBtn {
-    -webkit-animation: 0.75s arrowPulse alternate infinite;
     animation: 0.75s arrowPulse alternate infinite;
     position: absolute;
     font-size: 70px;
@@ -379,7 +365,6 @@ h3 {
   .screenshot {
     display: inline-block;
     height: 50vh;
-    -webkit-box-shadow: 0 0 5px black;
     box-shadow: 0 0 5px black;
     width: 75%; }
   .screenshot2 {
@@ -411,9 +396,6 @@ h3 {
     display: block; }
   .newsViewsDiv {
     margin-bottom: 10px; }
-  #headerDownBtn {
-    top: 75%;
-    right: 45%; }
   .topContainer {
     top: 5%; }
   .downBtn {
@@ -430,8 +412,6 @@ h3 {
 @media screen and (min-width: 1550px) {
   .topContainer {
     top: 10%; }
-  #headerDownBtn {
-    right: 44%; }
   .descDiv {
     width: 65%;
     display: block;
@@ -442,17 +422,13 @@ h3 {
     font-size: 55px; }
   .portfolioHeader,
   h4 {
-    margin: 1px; }
-  #headerDownBtn {
-    top: 70%; } }
+    margin: 1px; } }
 
 @media screen and (min-height: 850px) {
   .descDiv {
     font-size: 30px; }
   .portfolioContent {
     width: 65%; }
-  #headerDownBtn {
-    top: 77%; }
   .bioDiv {
     font-size: 35px; }
   h3 {
